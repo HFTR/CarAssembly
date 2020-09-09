@@ -5,7 +5,7 @@ pipeline {
       stage('Build') {
          steps {
             //sh 'rm -rf build' 
-            sh 'mkdir build_git'
+            sh 'mkdir build'
             sh 'touch build/car.txt'
             sh 'echo "chassis" >> build/car.txt'
             sh 'echo "engine" >> build/car.txt'
